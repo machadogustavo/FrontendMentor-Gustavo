@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  line-height: 1.42rem;
+  list-style: none outside none;
+  text-decoration: none;
+  text-indent: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+  /* Cor Primária */
+
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: var(--Very-pale-blue);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  border-radius: 2em;
+  background-color: white;
+}
+
+.imgCard img {
+  border-radius: 2rem 2rem 0px 0px;
+  width: 100%;
+}
+
+.textCard {
+  text-align: center;
+}
+
+.textCard h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.textCard p {
+  color: var(--Desaturated-blue);
+  font-size: 16px;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.optionCard {
+  display: flex;
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--Very-pale-blue);
+  border-radius: 1rem;
+}
+
+.optionTextCard {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 20px;
+}
+
+.optionTextCard > :first-child {
+  font-weight: 700;
+}
+
+.optionTextCard > :nth-child(2) {
+  color: var(--Desaturated-blue);
+}
+
+.optionButtonCard {
+  font-weight: 700;
+  color: var(--Bright-blue);
+  text-decoration: underline;
+  margin: 0 0 0 0px;
+}
+
+.buttonCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.buttonCard button {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  margin: 10px 20px;
+  border-radius: 0.8rem;
+}
+
+.One {
+  background-color: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+  font-weight: 900;
+  box-shadow: 0px 20px 5px var(--Pale-blue);
+}
+
+.Two {
+  font-weight: 900;
+  color: var(--Desaturated-blue);
+  background-color: none;
+}
