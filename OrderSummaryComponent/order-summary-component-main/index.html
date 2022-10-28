@@ -14,49 +14,44 @@
 
     <title>Frontend Mentor | Order summary card</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Red+Hat+Display"
+    />
   </head>
   <body>
-    <div class="container">
-      
-      <div class="card">
-        
-        <div class="imgCard">
-         <img src="./images/illustration-hero.svg" alt=""/>
-        </div>
 
-        <div class="textCard">
-          <h2>Order Summary</h2>
-          <p>
-            You can now listen to millions of songs, audiobooks, and podcasts on
-            any device anywhere you like!
-          </p>
-        </div>
 
-         <div class="optionCard">
-          <img src="./images/icon-music.svg" alt=""/>
-          <div class="optionTextCard">
-            <span>Annual Plan </span> 
-            <span>$59.99/year</span>
+    <main>
+
+      <img src="./images/illustration-hero.svg" alt="Hero Illustration" />
+
+      <section>
+        <h1>Order Summary</h1>
+        <span class="description">You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!</span>
+
+        <div class="informations">
+          <div class="music-price">
+            <img src="./images/icon-music.svg" alt="Icon Music" />
+            <div class="price">
+              <strong> Annual Plan</strong>
+              <span>$59.99/year</span>
+            </div>
           </div>
-          <div class="optionButtonCard"><span> Change</span></div>
-          
+          <a href="#">Change</a>
         </div>
 
-        <div class="buttonCard">
-          <button class="buttonCard One">Proceed to Payment</button>
-          <button class="buttonCard Two">Cancel Order</button>
-        </div>
-
-      </div>
+        <button type="button">Proceed to Payment</button>
+        <a href="#" id="cancel-order">Cancel Order</a>
 
 
+      </section>
+    </main>
 
-
-    </div>
-
+    
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
