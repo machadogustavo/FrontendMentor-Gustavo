@@ -51,7 +51,12 @@
     background-color: var(--Very-pale-blue);
     max-width: 800px;
     border-radius: 1rem;
-    margin-bottom: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  footer{
+    margin: 1rem;
   }
 
   main section {
@@ -61,15 +66,8 @@
     height: 100%;
   }
 
-  .img-section {
-    background: url(./images/image-product-desktop.jpg);
-    background-size: 100% 100%;
-    background-image: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1000px;
-    min-height: 600px;
-
+  .img-section img {
+    max-height: 650px;
     border-radius: 1rem 0 0 1rem;
   }
 
@@ -77,10 +75,10 @@
     margin: 0 2rem;
   }
 
-  main .informations h2 {
+  #sub-title {
     font-family: Montserrat;
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 1rem;
     letter-spacing: 0.4rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -151,9 +149,10 @@
     color: var(--Very-pale-blue);
     font-weight: 700;
     font-size: 1.2rem;
+    cursor: pointer;
   }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     body {
       width: --Mobile;
       
@@ -170,20 +169,20 @@
         flex-direction: column;
       }
 
-      main section .img-section {
-        background-image: url(./images/image-product-mobile.jpg);
-        background-size: 100% 100%;
+    .img-section img {
+        max-height: 400px;
         width: 100%;
-        min-height: 350px;
         border-radius: 1rem 1rem 0 0;
       }
-      main section h1{
+
+    main section h1{
+
         font-size: 3rem;
         line-height: 3rem;
         text-align: left;
       }
 
-      footer{
+    footer{
         margin-bottom: 5rem;
       }
   }
