@@ -27,20 +27,14 @@
 
     --Font-Size-P: 50px
 
-    /* Widths */
 
-    --Mobile: 375px
-
-    --Desktop: 1440px
-
-    --Desktop2: 14px
   }
 
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
 
   body {
-    width: 1440px;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -197,12 +191,5 @@
         margin-bottom: 2rem;
     }
 
-
-  }
-
-  @media screen and (min-width: 1440px) {
-    body {
-        width: 100%;
-    }
 
   }
