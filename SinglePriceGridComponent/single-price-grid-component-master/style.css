@@ -7,6 +7,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Karla', sans-serif;
+  list-style: none;
 }
 
 :root {
@@ -51,6 +52,10 @@ body{
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 375px;
     height: 100%;
 }
@@ -80,12 +85,13 @@ main {
     margin-bottom: 2rem;
 }
 
-.join h3 {
+.join #title-join {
     color: var(--Bright-Yellow);
     margin-bottom: 2rem;
+    font-size: 1.2rem;
 }
 
-.join p {
+.join #description {
     color: var(--Grayish-Blue);
     line-height: 2rem;
     margin-bottom: 1rem;
@@ -171,7 +177,7 @@ main {
     margin-bottom: 1rem;
 }
 
-.why p {
+.why ul li {
     color: var(--Light-Gray);
     line-height: 1.5rem;
     font-size: var(--Font-size);
@@ -186,12 +192,14 @@ footer{
 @media screen and (min-width: 850px) {
 
     main {
-        width: 800px;
+        width: 1440px;
+        height: 100%;
     }
 
 
     .container {
-        width: 100%;
+        width: 60%;
+        
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 0.5fr 1fr;
 
@@ -202,8 +210,8 @@ footer{
         padding: 3rem;
     }
 
-    .join p{
-        margin-bottom: 0;
+    .join #title-join{
+        margin-bottom: 2rem;
     }
 
 
