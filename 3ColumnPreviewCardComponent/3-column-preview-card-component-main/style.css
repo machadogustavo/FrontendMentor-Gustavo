@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 :root {
@@ -44,9 +45,14 @@
   }
 
   main {
-    display: flex;
     width: 900px;
     min-height: 250px;
+    
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row;
   }
 
   main section{
@@ -58,7 +64,7 @@
     padding: 2rem;
   }
 
-  main h1 {
+  main h2 {
     font-family: 'Big Shoulders Display', cursive;
     font-size: 2.5rem;
     font-weight: 700;
@@ -97,7 +103,7 @@
     width: 56px;
   }
 
-  main section button {
+  main section a {
     font-family: 'Lexend Deca', sans-serif; 
     font-weight: bold;
     background-color: var(--Very-light-gray);
@@ -107,6 +113,7 @@
     width: 60%;
     margin-bottom: 1rem;
     cursor: pointer;
+    text-align: center;
   }
 
   #sedans-btn{
@@ -141,15 +148,19 @@
   }
 
   
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     body {
         width: 100%;
     }
 
     main {
-        flex-direction: column;
         width: 375px;
         margin-top: 5rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
     }
 
     main section {
@@ -168,7 +179,7 @@
     
     }
 
-    main section button {
+    main section a {
         padding: 1.5rem;
       }
 
