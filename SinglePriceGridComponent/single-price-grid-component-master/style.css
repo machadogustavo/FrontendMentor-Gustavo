@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Karla', sans-serif;
+}
+
+:root {
+
+    /* Cor Primária */
+  
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+  
+    /* Neutral Colors*/
+    
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+    /* Typography */
+
+    /* Body Copy */
+    
+    --Font-size: 16px;
+
+    /* Widths */
+
+    --Mobile: 375px;
+    --Desktop: 1440px;
+
+  }
+
+  
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--Light-Gray);
+}
+
+main {
+    width: 375px;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.4rem;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.join {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.4rem 0.4rem 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.join h2 {
+    color: var(--Cyan);
+    margin-bottom: 2rem;
+}
+
+.join h3 {
+    color: var(--Bright-Yellow);
+    margin-bottom: 2rem;
+}
+
+.join p {
+    color: var(--Grayish-Blue);
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    font-size: var(--Font-size);
+}
+
+.monthly {
+    background-color: var(--Cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.monthly h2 {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.monthly .price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem; 
+}
+
+.monthly .price #price-number:hover {
+    transform: scale(1.2);
+}
+
+.monthly .price #price-number {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.monthly .price #price-text {
+    width: 100%;
+    color: var(--Light-Gray);
+    font-size: var(--Font-size);
+}
+
+.monthly #description {
+    color: var(--Light-Gray);
+    margin-bottom: 3rem;
+    font-size: var(--Font-size);
+    letter-spacing: 0.05rem;
+}
+
+.monthly a {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Bright-Yellow);
+    height: 3.5rem;
+    width: 100%;
+    color: var(--Light-Gray);
+    border-radius: 0.5rem;
+    font-weight: 700;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.monthly a:hover {
+    background-color: var(--Light-Gray);
+    color: var(--Cyan);
+}
+
+.why {
+    height: 100%;
+    width: 100%;
+    background-color: var(--Cyan);
+    padding: 2rem;
+    border-radius: 0 0 0.4rem 0.4rem;
+}
+
+.why h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.why p {
+    color: var(--Light-Gray);
+    line-height: 1.5rem;
+    font-size: var(--Font-size);
+    max-width: 15rem;
+}
+
+footer{
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width: 850px) {
+
+    main {
+        width: 800px;
+    }
+
+
+    .container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr 1fr;
+
+    }
+
+    .join {
+        grid-column-start: span 2;
+        padding: 3rem;
+    }
+
+    .join p{
+        margin-bottom: 0;
+    }
+
+
+    .monthly {
+        border-radius: 0 0 0 0.4rem;
+        padding: 3rem;
+        
+    }
+
+    .why {
+        padding: 3rem;
+        border-radius: 0 0 0.4rem 0;
+        
+    }
+
+    .why h2 {
+        margin-bottom: 2.2rem;
+    }
+
+    footer{
+        margin-bottom: 0;
+    }
+
+  }
+  
+  
+
+
+
+
+
